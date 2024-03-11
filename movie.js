@@ -1,4 +1,4 @@
-// Définition de l'API et fonction de récupération des films
+// API + clé
 const apiKey = 'f1cd3768';
 const apiUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&`;
  
@@ -18,7 +18,7 @@ async function searchFilms(searchTerm) {
     }
 }
  
-// Fonction pour afficher les films
+// afficher les films
 function displayFilms(movies) {
     FilmContainer.innerHTML = '';
  
